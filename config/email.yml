@@ -1,0 +1,9 @@
+production: &defaults
+  delivery_method: :smtp
+  smtp_settings:
+    address: smtp.gmail.com    # メールサーバのホスト名
+    port: 25                    # ポート番号
+    domain: rm-ellenora.fluxflex.com  # Redmineが稼働しているホストのFQDN
+  
+development:
+  <<: *defaults
